@@ -1,0 +1,24 @@
+input[type="text"] {
+    border: 5px solid red;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    position: relative;
+    background-size: contain;
+}
+
+span::before {
+    content: "Hello";
+    height: 200px;
+    width: 100px;
+    position: absolute;
+    left: 0;
+    z-index: 100;
+    color: white;
+    font-size: 300px;
+}
