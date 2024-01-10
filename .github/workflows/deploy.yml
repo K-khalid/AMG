@@ -10,17 +10,21 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        node-version: [16.x] # Specify the Node.js version you want to use
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
 
       - name: Setup Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: ${{ matrix.node-version }}
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        run: npm install
 
       - name: Build project
         run: npm run build
