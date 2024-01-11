@@ -128,7 +128,7 @@ function Header({ angle }) {
 
   return (
     <StyledHeader>
-      <Logo src={"/AMG Logo/4882142.png"} width={75} />
+      <Logo src={"./AMG Logo/4882142.png"} width={75} />
 
       {isAuthanticated ? (
         <IconContainer>

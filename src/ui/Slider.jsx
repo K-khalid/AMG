@@ -31,10 +31,10 @@ const StyledSlider = styled(motion.div)`
 `;
 
 const testArray = [
-  "/Home Images/1.png",
-  "/Home Images/2.png",
-  "/Home Images/3.png",
-  "/Home Images/4.png",
+  "./Home Images/1.png",
+  "./Home Images/2.png",
+  "./Home Images/3.png",
+  "./Home Images/4.png",
 ];
 
 const testText = [

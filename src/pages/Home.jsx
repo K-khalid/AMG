@@ -66,7 +66,7 @@ function Home() {
             <AnimatePresence>
               {isView && (
                 <Image
-                  src={"Home Images/order.png"}
+                  src={"./Home Images/order.png"}
                   width="55%"
                   variants="move"
                 />
