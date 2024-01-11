@@ -2,6 +2,7 @@ import { useMutation } from "@tanstack/react-query";
 import { signup as signupApi } from "../../services/auth";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
+import { BASEURL } from "../../utils/Base";
 
 function useSignup() {
   const navigate = useNavigate();
@@ -11,7 +12,7 @@ function useSignup() {
     onSuccess: () => {
       toast.dismiss();
       toast.success(`Signup Success`);
-      navigate("/");
+      navigate(`/${BASEURL}/`);
     },
 
     onMutate: () => toast.loading("Signing up"),
