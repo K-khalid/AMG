@@ -34,7 +34,7 @@ const StyledSidebar = styled(motion.aside)`
   left: -200px;
   min-width: 200px;
   max-width: 200px;
-  height: 100%;
+  height: 100vb;
   padding: 0 !important;
   padding-top: 100px !important;
   /* box-shadow: 0 0 5px var(--color-grey-300); */
