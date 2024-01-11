@@ -33,10 +33,10 @@ function App() {
           <BrowserRouter>
             <Routes>
               <Route element={<AppLayout />}>
-                <Route index element={<Navigate replace to="/home" />} />
-                <Route path="/home" element={<Home />} />
+                <Route index element={<Navigate replace to="/AMG/home" />} />
+                <Route path="/AMG/home" element={<Home />} />
                 <Route
-                  path="/order"
+                  path="/AMG/order"
                   element={
                     <ProtectedRouter>
                       <TestOrder />
@@ -45,7 +45,7 @@ function App() {
                 />
 
                 <Route
-                  path="/account"
+                  path="/AMG/account"
                   element={
                     <ProtectedRouter>
                       <Account />
@@ -54,7 +54,7 @@ function App() {
                 />
 
                 <Route
-                  path="/manage"
+                  path="/AMG/manage"
                   element={
                     <ProtectedRouter>
                       <Manage />
@@ -62,8 +62,8 @@ function App() {
                   }
                 />
               </Route>
-              <Route path="/login" element={<Login />} />
-              <Route path="/signup" element={<Signup />} />
+              <Route path="/AMG/login" element={<Login />} />
+              <Route path="/AMG/signup" element={<Signup />} />
               <Route path="*" element={<Error />} />
             </Routes>
           </BrowserRouter>
