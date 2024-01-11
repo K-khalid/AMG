@@ -845,7 +845,7 @@ to {
   @media (max-width: 1100px) {
     flex-direction: column;
     gap: 0;
-    margin-top: 50px;
+    margin-top: 60px;
     /* justify-content: normal; */
     .line {
       display: none;
@@ -874,7 +874,7 @@ to {
   transform: translateX(-50%);
 
   @media (max-width: 1100px) {
-    top: -45px;
+    top: -52px;
     > button {
       width: 25px;
       height: 25px;
@@ -1074,6 +1074,11 @@ to {
 `,qO=I.div`
   text-align: center;
   padding-top: 10px;
+  @media (max-width: 552px) {
+    span > div {
+      margin-top: 5px !important;
+    }
+  }
 `,KO=I.span`
   position: absolute;
   right: -3px;
