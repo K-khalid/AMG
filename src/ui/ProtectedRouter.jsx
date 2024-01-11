@@ -23,7 +23,7 @@ function ProtectedRouter({ children }) {
     function () {
       if (!isAuthanticated && !isLoading && !isLogginOut) {
         toast.error("Please login first");
-        return navigate("/login", { replace: true });
+        return navigate("AMG/login", { replace: true });
       }
     },
     [isAuthanticated, navigate, isLoading, isLogginOut]

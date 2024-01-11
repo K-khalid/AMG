@@ -144,7 +144,7 @@ function Header({ angle }) {
             />
 
             <IconList className={isMenu ? "open" : "close"}>
-              <Link style={{ lineHeight: 0 }} to={"/account"}>
+              <Link style={{ lineHeight: 0 }} to={"AMG/account"}>
                 <FaUser />
               </Link>
               {isDark ? (
@@ -158,10 +158,10 @@ function Header({ angle }) {
         </IconContainer>
       ) : (
         <IconContainer gap={10}>
-          <Button color={"white"} fs={15} to={"/signup"}>
+          <Button color={"white"} fs={15} to={"AMG/signup"}>
             SignUp
           </Button>
-          <Button color={"white"} fs={15} to={"/login"}>
+          <Button color={"white"} fs={15} to={"AMG/login"}>
             Login
           </Button>
           {isDark ? <FaSun onClick={Toggle} /> : <FaMoon onClick={Toggle} />}
