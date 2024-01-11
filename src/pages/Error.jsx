@@ -107,7 +107,7 @@ function Error() {
   return (
     <StyledError>
       <ErrorLogo variants={variants} initial={"hidden"} animate={"visiable"}>
-        <img src="./Drone.png" alt="e" />
+        <img src="Drone.png" alt="e" />
       </ErrorLogo>
       <Message
         animate={{ opacity: 1 }}

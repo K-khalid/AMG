@@ -151,18 +151,18 @@ function Sidebar() {
       //   borderRadius: isOpen ? "0" : "30%",
       // }}
       >
-        <LinkComponent to="/home" icon={<HiOutlineHome />}>
+        <LinkComponent to="AMG/home" icon={<HiOutlineHome />}>
           Home
         </LinkComponent>
-        <LinkComponent to="/order" icon={<BiFoodMenu />}>
+        <LinkComponent to="AMG/order" icon={<BiFoodMenu />}>
           Orders
         </LinkComponent>
         {isAdmin && (
-          <LinkComponent to="/manage" icon={<LiaUserEditSolid />}>
+          <LinkComponent to="AMG/manage" icon={<LiaUserEditSolid />}>
             Manage
           </LinkComponent>
         )}
-        <LinkComponent to="/aboutUs" icon={<TiInfoLargeOutline />}>
+        <LinkComponent to="AMG/aboutUs" icon={<TiInfoLargeOutline />}>
           About us
         </LinkComponent>
       </Links>
