@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://K-khalid.github.io/AMG/home",
+  "homepage": "https://K-khalid.github.io/AMG/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
