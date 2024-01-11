@@ -594,7 +594,7 @@ to {
   width: 100%;
   max-width: 100%;
   transition: 1s;
-  height: 100%;
+  height: calc(100% - 300px);
   padding-bottom: 50px;
 
   @media (max-width: 552px) {
