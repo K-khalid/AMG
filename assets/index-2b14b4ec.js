@@ -603,7 +603,7 @@ to {
     /* display: grid;
     grid-template-rows: auto-fill 1fr; */
   }
-`;function U8(){const[e,t]=x.useState(!1),{isAdmin:n}=Yn(),r=Ri();return x.useEffect(()=>{t(!1)},[r.pathname]),v.jsxs(F8,{className:e?"open":"close",children:[v.jsx(N8,{onClick:()=>t(i=>!i),children:v.jsx(L8,{style:e&&{transform:" rotateY(180deg) scale(1.1)"}})}),v.jsx(Cc,{animate:{rotate:[0,360],transition:{ease:"linear",repeat:1/0,duration:2}},src:"./AMG Logo/4845002.png",width:"80",width2:"110px"}),v.jsxs(V8,{children:[v.jsx(Sl,{to:`${De}/home`,icon:v.jsx(D8,{}),children:"Home"}),v.jsx(Sl,{to:`${De}/order`,icon:v.jsx(I8,{}),children:"Orders"}),n&&v.jsx(Sl,{to:`${De}/manage`,icon:v.jsx(M8,{}),children:"Manage"}),v.jsx(Sl,{to:`${De}/aboutus`,icon:v.jsx(UC,{}),children:"About us"})]})]})}I.div`
+`;function U8(){const[e,t]=x.useState(!1),{isAdmin:n}=Yn(),r=Ri();return x.useEffect(()=>{t(!1)},[r.pathname]),v.jsxs(F8,{className:e?"open":"close",children:[v.jsx(N8,{onClick:()=>t(i=>!i),children:v.jsx(L8,{style:e&&{transform:" rotateY(180deg) scale(1.1)"}})}),v.jsx(Cc,{animate:{rotate:[0,360],transition:{ease:"linear",repeat:1/0,duration:2}},src:"./AMG Logo/4845002.png",width:"80",width2:"120px"}),v.jsxs(V8,{children:[v.jsx(Sl,{to:`${De}/home`,icon:v.jsx(D8,{}),children:"Home"}),v.jsx(Sl,{to:`${De}/order`,icon:v.jsx(I8,{}),children:"Orders"}),n&&v.jsx(Sl,{to:`${De}/manage`,icon:v.jsx(M8,{}),children:"Manage"}),v.jsx(Sl,{to:`${De}/aboutus`,icon:v.jsx(UC,{}),children:"About us"})]})]})}I.div`
   background-color: var(--color-grey-150);
   /* color: var(--color-grey-0); */
   display: flex;
