@@ -28,6 +28,7 @@ const StyledAppLayout = styled.div`
     }
   }
   .main {
+    height: 100%;
     overflow: auto;
     padding: 5px 40px;
     position: relative;
