@@ -148,7 +148,7 @@ function Sidebar() {
         }}
         src="./AMG Logo/4845002.png"
         width="80"
-        width2="110px"
+        width2="120px"
       />
 
       <Links>
