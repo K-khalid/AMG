@@ -116,8 +116,8 @@ const Links = styled.ul`
 
   @media (max-width: 552px) {
     opacity: 0;
-    display: grid;
-    grid-template-rows: auto-fill 1fr;
+    /* display: grid;
+    grid-template-rows: auto-fill 1fr; */
   }
 `;
 
