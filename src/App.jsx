@@ -33,8 +33,8 @@ function App() {
           <BrowserRouter>
             <Routes>
               <Route element={<AppLayout />}>
-                <Route index element={<Navigate replace to="/home" />} />
-                <Route path="/home" element={<Home />} />
+                <Route index element={<Navigate replace to="/AMG/home" />} />
+                <Route path="/AMG/home" element={<Home />} />
                 <Route
                   path="/order"
                   element={
