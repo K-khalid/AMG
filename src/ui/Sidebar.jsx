@@ -151,7 +151,7 @@ function Sidebar() {
       //   borderRadius: isOpen ? "0" : "30%",
       // }}
       >
-        <LinkComponent to="AMG/home" icon={<HiOutlineHome />}>
+        <LinkComponent to="AMG/" icon={<HiOutlineHome />}>
           Home
         </LinkComponent>
         <LinkComponent to="AMG/order" icon={<BiFoodMenu />}>
