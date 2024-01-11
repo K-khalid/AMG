@@ -34,7 +34,7 @@ const StyledSidebar = styled(motion.aside)`
   left: -200px;
   min-width: 200px;
   max-width: 200px;
-  height: 100vb;
+  height: 100dvb;
   padding: 0 !important;
   padding-top: 100px !important;
   /* box-shadow: 0 0 5px var(--color-grey-300); */
@@ -111,7 +111,8 @@ const Links = styled.ul`
   width: 100%;
   max-width: 100%;
   transition: 1s;
-  height: calc(100% - 300px);
+  /* height: calc(100% - 300px); */
+  flex: 1;
   padding-bottom: 50px;
 
   @media (max-width: 552px) {

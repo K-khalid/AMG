@@ -41,6 +41,7 @@ const StyledAppLayout = styled.div`
 `;
 
 function AppLayout() {
+  console.log(document.body);
   const { angle } = useThemes();
   return (
     <StyledAppLayout angle={angle} image={"Landing.png"}>
