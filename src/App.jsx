@@ -14,6 +14,7 @@ import Manage from "./pages/Manage";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { ThemesProvider } from "./context/ThemesContext";
 import TestOrder from "./pages/Order";
+import { BASEURL } from "./utils/Base";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -33,10 +34,13 @@ function App() {
           <BrowserRouter>
             <Routes>
               <Route element={<AppLayout />}>
-                <Route index element={<Navigate replace to="AMG/" />} />
-                <Route path="AMG/" element={<Home />} />
                 <Route
-                  path="AMG/order"
+                  index
+                  element={<Navigate replace to={`${BASEURL}/`} />}
+                />
+                <Route path={`${BASEURL}/`} element={<Home />} />
+                <Route
+                  path={`${BASEURL}/order`}
                   element={
                     <ProtectedRouter>
                       <TestOrder />
@@ -45,7 +49,7 @@ function App() {
                 />
 
                 <Route
-                  path="AMG/account"
+                  path={`${BASEURL}/account`}
                   element={
                     <ProtectedRouter>
                       <Account />
@@ -54,7 +58,7 @@ function App() {
                 />
 
                 <Route
-                  path="AMG/manage"
+                  path={`${BASEURL}/manage`}
                   element={
                     <ProtectedRouter>
                       <Manage />
@@ -62,8 +66,8 @@ function App() {
                   }
                 />
               </Route>
-              <Route path="AMG/login" element={<Login />} />
-              <Route path="AMG/signup" element={<Signup />} />
+              <Route path={`${BASEURL}/login`} element={<Login />} />
+              <Route path={`${BASEURL}/signup`} element={<Signup />} />
               <Route path="*" element={<Error />} />
             </Routes>
           </BrowserRouter>

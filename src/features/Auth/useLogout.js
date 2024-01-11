@@ -11,7 +11,7 @@ function useLogout() {
     onSuccess: () => {
       queryClient.removeQueries();
       queryClient.invalidateQueries();
-      navigate("/login");
+      navigate(`/`);
       toast.success("Logged out successfully");
     },
   });

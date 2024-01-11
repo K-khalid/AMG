@@ -14,7 +14,7 @@ const LoginLayout = styled.div`
   /* flex-direction: column; */
   gap: 25px;
   background-color: var(--color-grey-180);
-  height: 100vb;
+  height: 100dvb;
 
   @media (max-width: 552px) {
     gap: 15px;

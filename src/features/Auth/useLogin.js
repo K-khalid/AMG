@@ -11,7 +11,7 @@ function useLogin() {
 
     onSuccess: (user) => {
       queryClient.setQueryData(["user", user.user]);
-      navigate("/home");
+      navigate(`/`, { replace: true });
       toast.dismiss();
       toast.success(`Login Successfull`);
     },

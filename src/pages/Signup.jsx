@@ -11,7 +11,7 @@ const SignupLayout = styled.div`
   grid-template-rows: auto auto 1fr;
   gap: 10px;
   background-color: var(--color-grey-180);
-  height: 100vb;
+  height: 100dvb;
 
   @media (max-width: 552px) {
     gap: 15px;

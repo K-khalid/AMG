@@ -10,6 +10,7 @@ import useLogout from "../features/Auth/useLogout";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import useOutSideClick from "../hooks/useOutsideClick2.js";
+import { BASEURL } from "../utils/Base.js";
 
 const StyledHeader = styled.header`
   /* background-color: var(--color-grey-180); */
@@ -144,7 +145,7 @@ function Header({ angle }) {
             />
 
             <IconList className={isMenu ? "open" : "close"}>
-              <Link style={{ lineHeight: 0 }} to={"AMG/account"}>
+              <Link style={{ lineHeight: 0 }} to={`${BASEURL}/account`}>
                 <FaUser />
               </Link>
               {isDark ? (
@@ -158,10 +159,10 @@ function Header({ angle }) {
         </IconContainer>
       ) : (
         <IconContainer gap={10}>
-          <Button color={"white"} fs={15} to={"AMG/signup"}>
+          <Button color={"white"} fs={15} to={`${BASEURL}/signup`}>
             SignUp
           </Button>
-          <Button color={"white"} fs={15} to={"AMG/login"}>
+          <Button color={"white"} fs={15} to={`${BASEURL}/login`}>
             Login
           </Button>
           {isDark ? <FaSun onClick={Toggle} /> : <FaMoon onClick={Toggle} />}

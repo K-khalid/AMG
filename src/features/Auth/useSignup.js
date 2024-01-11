@@ -11,7 +11,7 @@ function useSignup() {
     onSuccess: () => {
       toast.dismiss();
       toast.success(`Signup Success`);
-      navigate("/home");
+      navigate("/");
     },
 
     onMutate: () => toast.loading("Signing up"),

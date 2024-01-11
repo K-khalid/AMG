@@ -12,8 +12,8 @@ const StyledAppLayout = styled.div`
   /* filter: brightness(1.1); */
 
   grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
-  max-height: 100vh;
+  min-height: 100dvb;
+  max-height: 100dvb;
   & > * {
     padding: 5px 80px;
   }

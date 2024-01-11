@@ -10,6 +10,7 @@ import { LiaUserEditSolid } from "react-icons/lia";
 import { TiInfoLargeOutline } from "react-icons/ti";
 import useUser from "../features/Auth/useUser";
 import { useLocation } from "react-router-dom";
+import { BASEURL } from "../utils/Base";
 
 // const Container = styled.div`
 //   position: fixed;
@@ -151,18 +152,18 @@ function Sidebar() {
       //   borderRadius: isOpen ? "0" : "30%",
       // }}
       >
-        <LinkComponent to="AMG/" icon={<HiOutlineHome />}>
+        <LinkComponent to={`${BASEURL}/`} icon={<HiOutlineHome />}>
           Home
         </LinkComponent>
-        <LinkComponent to="AMG/order" icon={<BiFoodMenu />}>
+        <LinkComponent to={`${BASEURL}/order`} icon={<BiFoodMenu />}>
           Orders
         </LinkComponent>
         {isAdmin && (
-          <LinkComponent to="AMG/manage" icon={<LiaUserEditSolid />}>
+          <LinkComponent to={`${BASEURL}/manage`} icon={<LiaUserEditSolid />}>
             Manage
           </LinkComponent>
         )}
-        <LinkComponent to="AMG/aboutUs" icon={<TiInfoLargeOutline />}>
+        <LinkComponent to={`${BASEURL}/aboutus`} icon={<TiInfoLargeOutline />}>
           About us
         </LinkComponent>
       </Links>

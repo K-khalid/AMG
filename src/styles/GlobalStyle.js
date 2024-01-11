@@ -120,7 +120,8 @@ const GlobalStyles = createGlobalStyle`
   background-color: rgba(255, 255, 255, 0.5);
 
   @media (max-width: 552px) {
-    width: 10px;
+    width: 0px;
+    display: none;
   }
 }
 
