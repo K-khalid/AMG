@@ -641,6 +641,7 @@ to {
     }
   }
   .main {
+    height: 100%;
     overflow: auto;
     padding: 5px 40px;
     position: relative;
