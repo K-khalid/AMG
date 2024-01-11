@@ -15,6 +15,7 @@ const StyledLink = styled(NavLink)`
   user-select: contain;
   transition: 0.5s;
   border-radius: 1px;
+
   padding: 20px 15px;
 
   opacity: 0.7;
@@ -39,7 +40,9 @@ const StyledLink = styled(NavLink)`
   }
 
   @media (max-width: 552px) {
-    padding: 25px 80px;
+    height: 100%;
+
+    /* padding: 25px 80px; */
     font-size: 22px;
     svg {
       width: 35px;

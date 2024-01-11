@@ -22,7 +22,7 @@ function Signup() {
   return (
     <SignupLayout>
       <div>
-        <Logo width={"200px"} width2={"40%"} src="/AMG Logo/4882136.png" />
+        <Logo width={"200px"} width2={"40%"} src="./AMG Logo/4882136.png" />
       </div>
       <Heading width="20%" align="center">
         Signup Now!

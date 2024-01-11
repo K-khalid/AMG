@@ -25,7 +25,7 @@ function Login() {
   return (
     <LoginLayout>
       <div>
-        <Logo width={200} width2={"40%"} src="/AMG Logo/4882136.png" />
+        <Logo width={200} width2={"40%"} src="./AMG Logo/4882136.png" />
       </div>
       <Heading width="20%" align="center">
         Join Us Now!

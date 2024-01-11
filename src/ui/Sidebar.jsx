@@ -110,11 +110,14 @@ const Links = styled.ul`
   overflow: hidden;
   width: 100%;
   max-width: 100%;
-
   transition: 1s;
+  height: 100%;
+  padding-bottom: 50px;
 
   @media (max-width: 552px) {
     opacity: 0;
+    display: grid;
+    grid-template-rows: auto-fill 1fr;
   }
 `;
 
@@ -144,15 +147,11 @@ function Sidebar() {
         }}
         src="./AMG Logo/4845002.png"
         width="80"
-        width2="90"
+        width2="100px"
       />
 
-      <Links
-      // style={{
-      //   borderRadius: isOpen ? "0" : "30%",
-      // }}
-      >
-        <LinkComponent to={`${BASEURL}/`} icon={<HiOutlineHome />}>
+      <Links>
+        <LinkComponent to={`${BASEURL}/home`} icon={<HiOutlineHome />}>
           Home
         </LinkComponent>
         <LinkComponent to={`${BASEURL}/order`} icon={<BiFoodMenu />}>

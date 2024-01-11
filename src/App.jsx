@@ -35,10 +35,10 @@ function App() {
             <Routes>
               <Route element={<AppLayout />}>
                 <Route
-                  index
-                  element={<Navigate replace to={`${BASEURL}/`} />}
+                  path={`/${BASEURL}/`}
+                  element={<Navigate replace to={`/${BASEURL}/home`} />}
                 />
-                <Route path={`${BASEURL}/`} element={<Home />} />
+                <Route path={`${BASEURL}/home`} element={<Home />} />
                 <Route
                   path={`${BASEURL}/order`}
                   element={

@@ -32,7 +32,7 @@ const StyledAppLayout = styled.div`
     padding: 5px 40px;
     position: relative;
     @media (max-width: 992px) {
-      padding: 5px 15px !important;
+      padding: 5px 10px !important;
       &:has(.table) {
         padding: 5px 0 !important;
       }

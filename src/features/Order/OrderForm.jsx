@@ -14,6 +14,7 @@ import useCreateOrder from "./useCreateOrder";
 import useUpdateOrder from "./useUpdateOrder";
 import useAddress from "../../hooks/useAddress";
 import styled from "styled-components";
+import { BASEURL } from "../../utils/Base";
 
 const AddressBtn = styled.button`
   position: absolute;
@@ -51,7 +52,7 @@ function OrderForm({ onClose, order = {} }) {
   useEffect(
     function () {
       if (!isLoading && !isAuthanticated) {
-        navigate("/login");
+        navigate(`/${BASEURL}/login`);
         toast.error("Login first to make an order");
       }
     },

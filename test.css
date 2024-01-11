@@ -1,24 +1,11 @@
-input[type="text"] {
-    border: 5px solid red;
+.Brand {
+    font-size: 50px;
 }
 
-body {
-    margin: 0;
-    padding: 0;
+.Brand>p {
+    color: red;
 }
 
-img {
-    position: relative;
-    background-size: contain;
-}
-
-span::before {
-    content: "Hello";
-    height: 200px;
-    width: 100px;
-    position: absolute;
-    left: 0;
-    z-index: 100;
-    color: white;
-    font-size: 300px;
+.Brand>.subBrand+p {
+    color: red;
 }

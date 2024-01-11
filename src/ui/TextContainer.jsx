@@ -34,10 +34,10 @@ const Pre = styled(motion.pre)`
 
   @media (max-width: 552px) {
     /* height: 230px; */
-    font-size: 16px;
+    font-size: 18px;
     line-height: 2.4;
-    height: 160px;
-    max-height: 160px;
+    height: 190px;
+    max-height: 190px;
 
     & > div:first-of-type {
       /* display: none; */
