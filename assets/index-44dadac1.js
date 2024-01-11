@@ -521,7 +521,7 @@ to {
   left: -200px;
   min-width: 200px;
   max-width: 200px;
-  height: 100dvb;
+  height: 100dvh;
   padding: 0 !important;
   padding-top: 100px !important;
   /* box-shadow: 0 0 5px var(--color-grey-300); */
@@ -625,8 +625,8 @@ to {
   /* filter: brightness(1.1); */
 
   grid-template-rows: auto 1fr auto;
-  min-height: 100dvb;
-  max-height: 100dvb;
+  min-height: 100dvh;
+  max-height: 100dvh;
   & > * {
     padding: 5px 80px;
   }
@@ -641,7 +641,6 @@ to {
     }
   }
   .main {
-    height: 100%;
     overflow: auto;
     padding: 5px 40px;
     position: relative;
