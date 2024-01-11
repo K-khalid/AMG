@@ -18,7 +18,7 @@ const StyledSlider = styled(motion.div)`
   @media (max-width: 1100px) {
     flex-direction: column;
     gap: 0;
-    margin-top: 50px;
+    margin-top: 60px;
     /* justify-content: normal; */
     .line {
       display: none;
@@ -85,7 +85,7 @@ const BulltesContainer = styled.div`
   transform: translateX(-50%);
 
   @media (max-width: 1100px) {
-    top: -45px;
+    top: -52px;
     > button {
       width: 25px;
       height: 25px;

@@ -34,6 +34,11 @@ const P = styled.p`
 const Container = styled.div`
   text-align: center;
   padding-top: 10px;
+  @media (max-width: 552px) {
+    span > div {
+      margin-top: 5px !important;
+    }
+  }
 `;
 
 const Cursor = styled.span`
