@@ -12,8 +12,8 @@ const StyledAppLayout = styled.div`
   /* filter: brightness(1.1); */
 
   grid-template-rows: auto 1fr auto;
-  min-height: 100dvb;
-  max-height: 100dvb;
+  min-height: 100dvh;
+  max-height: 100dvh;
   & > * {
     padding: 5px 80px;
   }
@@ -28,7 +28,6 @@ const StyledAppLayout = styled.div`
     }
   }
   .main {
-    height: 100%;
     overflow: auto;
     padding: 5px 40px;
     position: relative;
