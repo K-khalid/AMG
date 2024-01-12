@@ -35,17 +35,19 @@ const testArray = [
   "./Home Images/2.png",
   "./Home Images/3.png",
   "./Home Images/4.png",
+  "./Home Images/5.png",
 ];
 
 const testText = [
-  ` تزويـــد حلــــول شبكـــات الأنتـرنــــت الاسلكيــــة و توفيـــر تغطيــــة جيــــدة بسـرعـــة ربــــط مناسبـــة  
-`,
+  ` تزويـــد حلــــول شبكـــات الأنتـرنــــت الاسلكيــــة و توفيـــر تغطيــــة جيــــدة بسـرعـــة ربــــط مناسبـــة  `,
 
   `  تغطيـة متميزة لجميع المتطلبات بضمانات على المدى البعيد مـــع تقديـــم خدمـــة ربـــط لاسلكيـــة متطـــورة`,
 
-  `سوفتويــــر متميـــز بنظـــام عالـــى الاداء يتمكـــن مــن الأرتقــــاء بقــــوة وذكــــاء وإيصـــال الخدمـــة حتـــى اطـــراف الشبكـــة و هــو مـــا يتــميـــز بتوفيـــر خدمـــة انترنـــت قويـــة للعمـــلاء بأسعـــار متميــــزة جـــدا`,
+  `سوفتويــــر متميـــز بنظـــام عالـــى الاداء يتمكـــن مــن الأرتقــــاء بقــــوة وذكــــاء وإيصـــال الخدمـــة حتـــى اطـــراف الشبكـة`,
 
-  `تغطيـــة كاملـــة لجميـــع المداخـــل و المخـــارج و الطرقـــات بجــــودة لا تقـــل  عـــن اتش دي  سيرفـــر حمايـــة متميـــز و تسجيـــلا يـــدوم اكثــــر مــــن 20 يــــوم و فنيــــن علــــى اعلـــى مستـــوى مــــن الخبـــرة فى عالـــم الكاميــرات`,
+  `تغطيـــة كاملـــة لجميـــع المداخـــل و المخـــارج و الطرقـــات بجــــودة لا تقـــل  عـــن اتش دي `,
+
+  ` سيرفـر حمايـة متميـز و تسجيـلا يدوم اكثـر مــن 20 يــوم و فنيــن علــى اعلـى مستـوى مــن الخبـرة فى عالـم الكاميـرات `,
 ];
 
 // const BulltesContainer = styled.div`
@@ -74,7 +76,8 @@ const BulltesContainer = styled.div`
   justify-content: center;
   gap: 20px;
   /* background-color: #00000032; */
-  background-color: #00ffaa15;
+  /* background-color: #00ffaa15; */
+  background-color: #00bdc32a;
   padding: 5px 10px;
   border-radius: 10px;
 
@@ -105,26 +108,26 @@ const BulltesContainer = styled.div`
 function ImageSlider({ isRun }) {
   const [number, setNumber] = useState(0);
 
-  useEffect(
-    function () {
-      const id = setInterval(
-        isRun
-          ? null
-          : () => {
-              if (number === testArray.length - 1) return setNumber(0);
-              if (number < testArray.length - 1) return setNumber((n) => n + 1);
-            },
+  // useEffect(
+  //   function () {
+  //     const id = setInterval(
+  //       isRun
+  //         ? null
+  //         : () => {
+  //             if (number === testArray.length - 1) return setNumber(0);
+  //             if (number < testArray.length - 1) return setNumber((n) => n + 1);
+  //           },
 
-        5000
-      );
+  //       5000
+  //     );
 
-      return () => {
-        clearInterval(id);
-      };
-    },
+  //     return () => {
+  //       clearInterval(id);
+  //     };
+  //   },
 
-    [number, isRun]
-  );
+  //   [number, isRun]
+  // );
 
   return (
     <StyledSlider>
@@ -136,7 +139,7 @@ function ImageSlider({ isRun }) {
       <VerticalLine className="line" width="2px" height="75%" />
       <AnimatePresence mode="wait">
         <TextContanier key={number}>
-          <HorizontalLine mt={0} mb={40} width={"80%"} />
+          <HorizontalLine mt={-50} mb={40} width={"80%"} />
           {testText[number]}
           <HorizontalLine className="h-line" width={"80%"} />
         </TextContanier>

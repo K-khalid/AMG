@@ -22,14 +22,15 @@ const Bullets = styled.button`
   opacity: 0.5;
   ${(props) =>
     props.active && {
-      backgroundColor: "#21ffc4",
+      // backgroundColor: "#21ffc4",
+      backgroundColor: "#21c4ff",
       opacity: 1,
       border: "none",
       color: "#444",
     }}
 
   &:hover {
-    background-image: linear-gradient(45deg, #002643, #25a583);
+    background-image: linear-gradient(45deg, #002643, #21b5ff);
   }
 
   &:active,

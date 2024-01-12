@@ -93,7 +93,8 @@ const Button = styled.button`
 
   svg {
     transition: "1s";
-    color: #34ba82;
+    /* color: #34ba82; */
+    color: #34bab3;
   }
 
   &:focus {

@@ -46,7 +46,8 @@ const GlobalStyles = createGlobalStyle`
   --image-opacity: 100%;
 
 
-  --icon-color:#00bb83;
+  /* --icon-color:#00bb83; */
+  --icon-color:#009cbb;
 }
 
   &.dark-mode{
@@ -93,7 +94,8 @@ const GlobalStyles = createGlobalStyle`
 --image-opacity: 90%;
 
 
---icon-color:#00bb83;
+/* --icon-color:#00bb83; */
+--icon-color:#009cbb;
 
   }
 
@@ -127,7 +129,8 @@ const GlobalStyles = createGlobalStyle`
 
 ::-webkit-scrollbar-thumb{
   /* background-image: linear-gradient(0deg, #00c378, #00bdc3); */
-      background-image: linear-gradient(0deg, #00c3789d, #00bdc399);
+      /* background-image: linear-gradient(0deg, #00c3789d, #00bdc399); */
+      background-image: linear-gradient(0deg, #00bdc3, #00bdc399);
       transition: 0.5s;
 }
 

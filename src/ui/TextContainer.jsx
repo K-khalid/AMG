@@ -18,6 +18,7 @@ const Pre = styled(motion.pre)`
   /* font-family: "Noto Nastaliq Urdu", serif; */
   font-family: "Vazirmatn", sans-serif;
   font-size: 24.5px;
+
   /* font-size: 30px; */
   opacity: 0;
   @media (max-width: 1215px) {
@@ -34,10 +35,12 @@ const Pre = styled(motion.pre)`
 
   @media (max-width: 552px) {
     /* height: 230px; */
-    font-size: 18px;
+    font-size: 17px;
     line-height: 2.4;
-    height: 190px;
-    max-height: 190px;
+    /* height: 190px;
+    max-height: 190px; */
+    height: 150px;
+    max-height: 150px;
 
     & > div:first-of-type {
       /* display: none; */
@@ -54,10 +57,12 @@ const Text = styled.div`
   text-align: center;
   /* padding-top: 30px; */
   flex-basis: 50%;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @media (max-width: 1100px) {
     padding-top: 0;
-    margin: 0 0 30px 0;
+    /* margin: 0 0 30px 0; */
   }
 `;
 

@@ -49,7 +49,7 @@ function Home() {
           style={{ opacity: isView ? 1 : 0 }}
           width={"100%"}
           height={2}
-          mt={15}
+          mt={1}
         />
 
         <FlexContainer

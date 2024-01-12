@@ -46,6 +46,7 @@ const IconContainer = styled.div`
     outline-style: solid;
     outline-color: var(--color-grey-300);
     outline-width: 0;
+    color: white;
 
     &:hover {
       outline-width: 1px;
