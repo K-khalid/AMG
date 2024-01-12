@@ -35,7 +35,7 @@ const Pre = styled(motion.pre)`
 
   @media (max-width: 552px) {
     /* height: 230px; */
-    font-size: 17px;
+    font-size: 19px;
     line-height: 2.4;
     /* height: 190px;
     max-height: 190px; */
@@ -62,7 +62,7 @@ const Text = styled.div`
   align-items: center;
   @media (max-width: 1100px) {
     padding-top: 0;
-    /* margin: 0 0 30px 0; */
+    margin: 0 0 30px 0;
   }
 `;
 
