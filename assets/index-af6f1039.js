@@ -775,7 +775,7 @@ to {
 
   @media (max-width: 552px) {
     /* height: 230px; */
-    font-size: 17px;
+    font-size: 19px;
     line-height: 2.4;
     /* height: 190px;
     max-height: 190px; */
@@ -800,7 +800,7 @@ to {
   align-items: center;
   @media (max-width: 1100px) {
     padding-top: 0;
-    /* margin: 0 0 30px 0; */
+    margin: 0 0 30px 0;
   }
 `,J8={visible:{opacity:1,transition:{type:"ease",duration:.5}},exit:{opacity:0,transition:{type:"ease",duration:.5}}};function X8({children:e}){return v.jsx(Y8,{children:v.jsx(Q8,{variants:J8,animate:"visible",exit:"exit",children:e})})}const L2=I.div`
   height: ${e=>e.height||"100%"};
