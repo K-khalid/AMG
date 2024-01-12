@@ -96,8 +96,8 @@ function UpdatePasswordForm() {
       <ColorsContainer>
         <Balls
           angle={-angle}
-          onClick={(e) => changeColor(e, 35)}
-          className={`magenta ${angle === 65 && "active"}`}
+          onClick={(e) => changeColor(e, 15)}
+          className={`magenta ${angle === 15 && "active"}`}
         />
         <Balls
           angle={-angle}
@@ -106,8 +106,8 @@ function UpdatePasswordForm() {
         />
         <Balls
           angle={-angle}
-          onClick={(e) => changeColor(e, 25)}
-          className={`blue ${angle === 25 && "active"}`}
+          onClick={(e) => changeColor(e, 315)}
+          className={`blue ${angle === 315 && "active"}`}
         />
         <Balls
           angle={-angle}

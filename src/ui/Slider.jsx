@@ -108,26 +108,26 @@ const BulltesContainer = styled.div`
 function ImageSlider({ isRun }) {
   const [number, setNumber] = useState(0);
 
-  // useEffect(
-  //   function () {
-  //     const id = setInterval(
-  //       isRun
-  //         ? null
-  //         : () => {
-  //             if (number === testArray.length - 1) return setNumber(0);
-  //             if (number < testArray.length - 1) return setNumber((n) => n + 1);
-  //           },
+  useEffect(
+    function () {
+      const id = setInterval(
+        isRun
+          ? null
+          : () => {
+              if (number === testArray.length - 1) return setNumber(0);
+              if (number < testArray.length - 1) return setNumber((n) => n + 1);
+            },
 
-  //       5000
-  //     );
+        5000
+      );
 
-  //     return () => {
-  //       clearInterval(id);
-  //     };
-  //   },
+      return () => {
+        clearInterval(id);
+      };
+    },
 
-  //   [number, isRun]
-  // );
+    [number, isRun]
+  );
 
   return (
     <StyledSlider>
