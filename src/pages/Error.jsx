@@ -9,6 +9,7 @@ const StyledError = styled.div`
   background-size: cover;
   position: relative;
   overflow: hidden;
+  filter: drop-shadow(2px 4px 10px black);
 `;
 
 const errorVariants = {

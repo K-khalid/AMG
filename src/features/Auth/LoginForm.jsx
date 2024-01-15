@@ -45,7 +45,7 @@ function LoginForm() {
         />
       </FormRow>
 
-      <Ask question="Don't have account ?" link="signup" to="/signup" />
+      <Ask question="Don't have account ?" link="signup" to="/AMG/signup" />
 
       <Button r={6} disabled={isLoading}>
         Login

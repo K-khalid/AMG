@@ -8,14 +8,15 @@ const Content = styled(motion.h1)`
   font-size: ${(props) => props.fs || 16}px;
   margin-top: ${(props) => props.mt || 0}px;
   line-height: ${(props) => props.lh || 2};
-  width: ${(props) => props.width || 400}px;
+  /* width: ${(props) => props.width || 400}px; */
+  max-width: 100%;
   flex-basis: ${(props) => props.fb || "50%"};
   text-align: ${(props) => props.ta || "center"};
   @media (max-width: 1080px) {
     width: fit-content;
     margin: auto;
     white-space: pre-line;
-    font-size: 20px;
+    font-size: 21px;
   }
 `;
 

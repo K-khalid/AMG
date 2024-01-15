@@ -15,6 +15,7 @@ import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { ThemesProvider } from "./context/ThemesContext";
 import TestOrder from "./pages/Order";
 import { BASEURL } from "./utils/Base";
+import { LanguageProvider } from "./context/ChangeLanguages";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -31,46 +32,50 @@ function App() {
         <ReactQueryDevtools />
         <GlobalStyles />
         <ThemesProvider>
-          <BrowserRouter>
-            <Routes>
-              <Route element={<AppLayout />}>
-                <Route
-                  path={`/${BASEURL}/`}
-                  element={<Navigate replace to={`/${BASEURL}/home`} />}
-                />
-                <Route path={`${BASEURL}/home`} element={<Home />} />
-                <Route
-                  path={`${BASEURL}/order`}
-                  element={
-                    <ProtectedRouter>
-                      <TestOrder />
-                    </ProtectedRouter>
-                  }
-                />
+          <LanguageProvider>
+            <BrowserRouter>
+              <Routes>
+                <Route element={<AppLayout />}>
+                  <Route
+                    path={`/${BASEURL}/`}
+                    element={<Navigate replace to={`/${BASEURL}/home`} />}
+                  />
 
-                <Route
-                  path={`${BASEURL}/account`}
-                  element={
-                    <ProtectedRouter>
-                      <Account />
-                    </ProtectedRouter>
-                  }
-                />
+                  <Route path={`${BASEURL}/home`} element={<Home />} />
 
-                <Route
-                  path={`${BASEURL}/manage`}
-                  element={
-                    <ProtectedRouter>
-                      <Manage />
-                    </ProtectedRouter>
-                  }
-                />
-              </Route>
-              <Route path={`${BASEURL}/login`} element={<Login />} />
-              <Route path={`${BASEURL}/signup`} element={<Signup />} />
-              <Route path="*" element={<Error />} />
-            </Routes>
-          </BrowserRouter>
+                  <Route
+                    path={`${BASEURL}/order`}
+                    element={
+                      <ProtectedRouter>
+                        <TestOrder />
+                      </ProtectedRouter>
+                    }
+                  />
+
+                  <Route
+                    path={`${BASEURL}/account`}
+                    element={
+                      <ProtectedRouter>
+                        <Account />
+                      </ProtectedRouter>
+                    }
+                  />
+
+                  <Route
+                    path={`${BASEURL}/manage`}
+                    element={
+                      <ProtectedRouter>
+                        <Manage />
+                      </ProtectedRouter>
+                    }
+                  />
+                </Route>
+                <Route path={`${BASEURL}/login`} element={<Login />} />
+                <Route path={`${BASEURL}/signup`} element={<Signup />} />
+                <Route path="*" element={<Error />} />
+              </Routes>
+            </BrowserRouter>
+          </LanguageProvider>
         </ThemesProvider>
         <Toaster
           toastOptions={{

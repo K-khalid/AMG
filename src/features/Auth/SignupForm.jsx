@@ -78,7 +78,7 @@ function SignupForm() {
           disabled={isLoading}
         />
       </FormRow>
-      <Ask question="already have account ?" link="login" to="/login" />
+      <Ask question="already have account ?" link="login" to="/AMG/login" />
 
       <Button r={6} disabled={isLoading}>
         Confirm

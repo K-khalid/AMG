@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import useOutSideClick from "../hooks/useOutsideClick2.js";
 import { BASEURL } from "../utils/Base.js";
+import { useLang } from "../context/ChangeLanguages.jsx";
 
 const StyledHeader = styled.header`
   /* background-color: var(--color-grey-180); */
@@ -36,7 +37,8 @@ const IconContainer = styled.div`
   gap: ${(props) => props.gap || 15}px;
   position: relative;
 
-  svg {
+  svg,
+  span {
     padding: 5px;
     width: 32px;
     height: 32px;
@@ -107,12 +109,13 @@ const IconList = styled.ul`
     transition: 0.5s;
     position: absolute;
     top: 92%;
-    right: -14%;
+    right: -8%;
+    font-weight: bold;
     /* background-color: var(--color-grey-180); */
     background-color: #00000024;
-    width: 80px;
+    width: 70px;
     &.open {
-      height: 150px;
+      height: 180px;
       padding: 15px;
       gap: 10px;
     }
@@ -127,6 +130,7 @@ function Header({ angle }) {
   const { user } = useUser();
   const { fullName, avatar } = user?.user_metadata || {};
   const { ref } = useOutSideClick(() => setIsMenu(false));
+  const { lang, setLang } = useLang();
 
   return (
     <StyledHeader>
@@ -146,6 +150,9 @@ function Header({ angle }) {
             />
 
             <IconList className={isMenu ? "open" : "close"}>
+              <span onClick={() => setLang(lang === "en" ? "ar" : "en")}>
+                {lang === "en" ? "AR" : "EN"}
+              </span>
               <Link style={{ lineHeight: 0 }} to={`${BASEURL}/account`}>
                 <FaUser />
               </Link>
@@ -160,13 +167,16 @@ function Header({ angle }) {
         </IconContainer>
       ) : (
         <IconContainer gap={10}>
-          <Button color={"white"} fs={15} to={`${BASEURL}/signup`}>
+          <Button color={"white"} fs={12.5} to={`${BASEURL}/signup`}>
             SignUp
           </Button>
-          <Button color={"white"} fs={15} to={`${BASEURL}/login`}>
+          <Button color={"white"} fs={12.5} to={`${BASEURL}/login`}>
             Login
           </Button>
           {isDark ? <FaSun onClick={Toggle} /> : <FaMoon onClick={Toggle} />}
+          <span onClick={() => setLang(lang === "en" ? "ar" : "en")}>
+            {lang === "en" ? "AR" : "EN"}
+          </span>
         </IconContainer>
       )}
     </StyledHeader>

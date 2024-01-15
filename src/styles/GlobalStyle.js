@@ -118,7 +118,7 @@ const GlobalStyles = createGlobalStyle`
 
 
 ::-webkit-scrollbar{
-  width: 15px;
+  width: 12px;
   background-color: rgba(255, 255, 255, 0.5);
 
   @media (max-width: 552px) {

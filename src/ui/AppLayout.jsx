@@ -8,7 +8,8 @@ import { useThemes } from "../context/ThemesContext";
 
 const StyledAppLayout = styled.div`
   display: grid;
-  filter: ${(props) => `hue-rotate(${props.angle}deg)`};
+  filter: ${(props) =>
+    `hue-rotate(${props.angle}deg) drop-shadow(2px 4px 6px black);`};
   /* filter: brightness(1.1); */
 
   grid-template-rows: auto 1fr auto;

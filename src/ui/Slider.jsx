@@ -105,7 +105,7 @@ const BulltesContainer = styled.div`
     }
   } */
 `;
-function ImageSlider({ isRun }) {
+function ImageSlider({ isRun, data }) {
   const [number, setNumber] = useState(0);
 
   useEffect(
@@ -140,7 +140,7 @@ function ImageSlider({ isRun }) {
       <AnimatePresence mode="wait">
         <TextContanier key={number}>
           <HorizontalLine mt={-50} mb={40} width={"80%"} />
-          {testText[number]}
+          {data[0]["content"][number]}
           <HorizontalLine className="h-line" width={"80%"} />
         </TextContanier>
       </AnimatePresence>

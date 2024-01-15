@@ -11,6 +11,9 @@ import Modal from "../ui/Modal2";
 import OrderForm from "../features/Order/OrderForm";
 import MainText from "../ui/MainText";
 import VerticalLine from "../ui/VerticalLine";
+import dataAr from "../data/dataAr.json";
+import dataEn from "../data/dataEn.json";
+import { useLang } from "../context/ChangeLanguages";
 
 function Home() {
   // document.body.addEventListener("keypress", (key) => {
@@ -19,6 +22,8 @@ function Home() {
   // });
   const ref = useRef();
   const isView = useInView(ref, { amount: 0.5 });
+  const { lang } = useLang();
+  const dataToShow = lang === "en" ? dataEn : dataAr;
 
   // useEffect(() => {
   //   const main = document.querySelector(".main");
@@ -43,7 +48,7 @@ function Home() {
         animate={{ zIndex: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 2.5 }}
       >
-        <Slider isRun={isView ? "TRUE" : ""} />
+        <Slider data={dataToShow} isRun={isView ? "TRUE" : ""} />
 
         <HorizontalLine
           style={{ opacity: isView ? 1 : 0 }}
@@ -86,14 +91,16 @@ function Home() {
             gap={50}
           >
             <AnimatePresence>
-              <Content fs={25} width={460} as={"p"} key={1}>
-                يمكنــــك الأن اســتـخـــــدام خــدمــتــنـــــــا و تسجيــــــل
-                بياناتــــــك
+              <Content fs={24} as={"p"} key={1}>
+                {/* width={500} */}
+                {/* يمكنــــك الأن اســتـخـــــدام خــدمــتــنـــــــا و تسجيــــــل
+                بياناتــــــك */}
+                {dataToShow[1]["ask"]}
               </Content>
               <Modal key={2}>
                 <Modal.Open id="Form">
-                  <Button fs={22} width="fit-content">
-                    تسجيــــل الطلب
+                  <Button fs={20} width="fit-content">
+                    {dataToShow[2]["order"]}
                   </Button>
                 </Modal.Open>
 
