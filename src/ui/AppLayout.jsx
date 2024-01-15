@@ -21,7 +21,7 @@ const StyledAppLayout = styled.div`
   background-image: url(${(props) => props.image || ""});
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom;
   position: relative;
   @media (max-width: 778px) {
     & > * {

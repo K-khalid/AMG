@@ -91,7 +91,7 @@ function Home() {
             gap={50}
           >
             <AnimatePresence>
-              <Content fs={24} as={"p"} key={1}>
+              <Content fs={23} as={"p"} key={1}>
                 {/* width={500} */}
                 {/* يمكنــــك الأن اســتـخـــــدام خــدمــتــنـــــــا و تسجيــــــل
                 بياناتــــــك */}

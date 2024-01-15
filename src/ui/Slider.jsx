@@ -118,7 +118,7 @@ function ImageSlider({ isRun, data }) {
               if (number < testArray.length - 1) return setNumber((n) => n + 1);
             },
 
-        5000
+        10000
       );
 
       return () => {
