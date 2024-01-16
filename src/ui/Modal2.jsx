@@ -14,7 +14,7 @@ const StyledWindow = styled(motion.div)`
     & > form {
       padding: 20px 10px;
       border-radius: 0;
-      gap: 5px;
+      /* gap: 5px; */
       min-height: 100dvb;
 
       > div {
