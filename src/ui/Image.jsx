@@ -74,7 +74,7 @@ const photosVariants2 = {
   },
 };
 
-function Image({ src, width, variants = "opacity" }) {
+function Images({ src, width, variants = "opacity" }) {
   return (
     <StyledPhoto
       initial="hidden"
@@ -84,8 +84,9 @@ function Image({ src, width, variants = "opacity" }) {
       exit="exit"
       alt="1"
       width={width}
+      loading="eager"
     />
   );
 }
 
-export default Image;
+export default Images;

@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import Image from "./Image";
+import Images from "./Image";
 import TextContanier from "../ui/TextContainer";
 import VerticalLine from "../ui/VerticalLine";
 import styled from "styled-components";
@@ -110,6 +110,9 @@ function ImageSlider({ isRun, data }) {
 
   useEffect(
     function () {
+      testArray.forEach((image) => {
+        new Image().scr = image;
+      });
       const id = setInterval(
         isRun
           ? null
@@ -133,7 +136,7 @@ function ImageSlider({ isRun, data }) {
     <StyledSlider>
       <PhotoContainer>
         <AnimatePresence mode="wait">
-          <Image src={testArray[number]} key={number} width={"500px"} />
+          <Images src={testArray[number]} key={number} width={"500px"} />
         </AnimatePresence>
       </PhotoContainer>
       <VerticalLine className="line" width="2px" height="75%" />
