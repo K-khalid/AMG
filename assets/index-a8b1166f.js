@@ -901,7 +901,7 @@ to {
       font-size: 15px;
     }
   } */
-`;function sA({isRun:e,data:t}){const[n,r]=x.useState(0);return x.useEffect(function(){yo.forEach(s=>{new Image().scr=s});const i=setInterval(e?null:()=>{if(n===yo.length-1)return r(0);if(n<yo.length-1)return r(s=>s+1)},1e4);return()=>{clearInterval(i)}},[n,e]),v.jsxs(rA,{children:[v.jsx($2,{children:v.jsx(Ks,{mode:"wait",children:v.jsx(L2,{src:yo[n],width:"500px"},n)})}),v.jsx(D2,{className:"line",width:"2px",height:"75%"}),v.jsx(Ks,{mode:"wait",children:v.jsxs(tA,{children:[v.jsx(va,{mt:-50,mb:40,width:"80%"}),t[0].content[n],v.jsx(va,{className:"h-line",width:"80%"})]},n)}),v.jsx(iA,{children:yo.map((i,s)=>v.jsx(nA,{onClick:()=>r(s),active:s===n?"true":""},i))})]})}const oA=I(ct.div)`
+`;function sA({isRun:e,data:t}){const[n,r]=x.useState(0);return x.useEffect(function(){const i=setInterval(e?null:()=>{if(n===yo.length-1)return r(0);if(n<yo.length-1)return r(s=>s+1)},1e4);return()=>{clearInterval(i)}},[n,e]),v.jsxs(rA,{children:[v.jsx("div",{children:yo.map(i=>v.jsx("img",{src:i,style:{display:"none"},alt:"tests"}))}),v.jsx($2,{children:v.jsx(Ks,{mode:"wait",children:v.jsx(L2,{src:yo[n],width:"500px"},n)})}),v.jsx(D2,{className:"line",width:"2px",height:"75%"}),v.jsx(Ks,{mode:"wait",children:v.jsxs(tA,{children:[v.jsx(va,{mt:-50,mb:40,width:"80%"}),t[0].content[n],v.jsx(va,{className:"h-line",width:"80%"})]},n)}),v.jsx(iA,{children:yo.map((i,s)=>v.jsx(nA,{onClick:()=>r(s),active:s===n?"true":""},i))})]})}const oA=I(ct.div)`
   position: absolute;
   top: 50%;
   left: 50%;
