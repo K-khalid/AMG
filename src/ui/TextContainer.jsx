@@ -17,7 +17,8 @@ const Pre = styled(motion.pre)`
   /* font-family: "Handjet", sans-serif; */
   /* font-family: "Noto Nastaliq Urdu", serif; */
   font-family: "Vazirmatn", sans-serif;
-  font-size: 21px;
+  font-size: 21.5px;
+  word-spacing: 0.5px;
 
   /* font-size: 30px; */
   opacity: 0;
