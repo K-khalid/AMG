@@ -46,6 +46,7 @@ const imgs = [
   "./Home Images/4.png",
   "./Home Images/5.png",
   "./AMG Logo/4845002.png",
+  "./Home Images/order.png",
   "Landing.png",
 ];
 function AppLayout() {
