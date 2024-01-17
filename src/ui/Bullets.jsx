@@ -31,6 +31,13 @@ const Bullets = styled.button`
     background-image: linear-gradient(45deg, #002643, #21b5ff);
   }
 
+  // mobile not have a hover effect!
+  @media (max-width: 778px) {
+    &:hover {
+      background-image: inherit;
+    }
+  }
+
   &:active,
   &:focus {
     outline: none;

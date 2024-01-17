@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, useWillChange } from "framer-motion";
 import styled from "styled-components";
 
 const StyledPhoto = styled(motion.img)`
@@ -63,6 +63,7 @@ const photosVariants2 = {
 };
 
 function Images({ src, width, variants = "opacity" }) {
+  const willChange = useWillChange();
   return (
     <StyledPhoto
       initial="hidden"
@@ -73,6 +74,7 @@ function Images({ src, width, variants = "opacity" }) {
       alt="1"
       width={width}
       loading="eager"
+      style={{ willChange }}
     />
   );
 }

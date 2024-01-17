@@ -14,6 +14,7 @@ const StyledButton = styled.button`
   font-size: ${(props) => props.fs || ""}px;
   &:hover {
     background-color: ${(props) => props.bgh || "#00884d"};
+    box-shadow: 0 0 10px silver;
   }
 
   &:disabled {
