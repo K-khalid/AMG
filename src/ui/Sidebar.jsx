@@ -121,19 +121,19 @@ function Sidebar() {
           }
         />
       </Button>
-      {/* <Logo
-        animate={{
-          rotate: [0, 360],
-          transition: {
-            ease: "linear",
-            repeat: Infinity,
-            duration: 2,
-          },
-        }}
+      <Logo
+        // animate={{
+        //   rotate: [0, 360],
+        //   transition: {
+        //     ease: "linear",
+        //     repeat: Infinity,
+        //     duration: 2,
+        //   },
+        // }}
         src="./AMG Logo/4845002.png"
         width="80"
         width2="120px"
-      /> */}
+      />
 
       <Links onClick={() => setIsOpen(false)}>
         <LinkComponent to={`${BASEURL}/home`} icon={<HiOutlineHome />}>
