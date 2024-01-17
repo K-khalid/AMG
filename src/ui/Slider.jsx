@@ -12,14 +12,12 @@ const StyledSlider = styled(motion.div)`
   display: flex;
   justify-content: space-between;
   position: relative;
-  /* min-height: calc(100vb - 300px); */
   gap: 30px;
 
   @media (max-width: 1100px) {
     flex-direction: column;
     gap: 0;
     margin-top: 60px;
-    /* justify-content: normal; */
     .line {
       display: none;
     }
@@ -38,45 +36,11 @@ const testArray = [
   "./Home Images/5.png",
 ];
 
-// const testText = [
-//   ` تزويـــد حلــــول شبكـــات الأنتـرنــــت الاسلكيــــة و توفيـــر تغطيــــة جيــــدة بسـرعـــة ربــــط مناسبـــة  `,
-
-//   `  تغطيـة متميزة لجميع المتطلبات بضمانات على المدى البعيد مـــع تقديـــم خدمـــة ربـــط لاسلكيـــة متطـــورة`,
-
-//   `سوفتويــــر متميـــز بنظـــام عالـــى الاداء يتمكـــن مــن الأرتقــــاء بقــــوة وذكــــاء وإيصـــال الخدمـــة حتـــى اطـــراف الشبكـة`,
-
-//   `تغطيـــة كاملـــة لجميـــع المداخـــل و المخـــارج و الطرقـــات بجــــودة لا تقـــل  عـــن اتش دي `,
-
-//   ` سيرفـر حمايـة متميـز و تسجيـلا يدوم اكثـر مــن 20 يــوم و فنيــن علــى اعلـى مستـوى مــن الخبـرة فى عالـم الكاميـرات `,
-// ];
-
-// const BulltesContainer = styled.div`
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   gap: 20px;
-
-//   position: absolute;
-//   bottom: 10px;
-//   left: 50%;
-//   transform: translateX(-50%);
-
-//   @media (max-width: 1080px) {
-//     bottom: -20px;
-//   }
-//   @media (max-width: 552px) {
-//     bottom: -20px;
-//   }
-// `;
-
 const BulltesContainer = styled.div`
   display: flex;
   align-items: center;
-  /* flex-direction: column; */
   justify-content: center;
   gap: 20px;
-  /* background-color: #00000032; */
-  /* background-color: #00ffaa15; */
   background-color: #00bdc32a;
   padding: 5px 10px;
   border-radius: 10px;
@@ -95,25 +59,13 @@ const BulltesContainer = styled.div`
       font-size: 15px;
     }
   }
-  /* @media (max-width: 552px) {
-    top: -35px;
-
-    > button {
-      width: 25px;
-      height: 25px;
-      font-size: 15px;
-    }
-  } */
 `;
+
 function ImageSlider({ isRun, data }) {
   const [number, setNumber] = useState(0);
 
   useEffect(
     function () {
-      // testArray.forEach((image) => {
-      //   const s = (new Image().scr = image);
-      //   console.log(s);
-      // });
       const id = setInterval(
         isRun
           ? null
@@ -135,11 +87,6 @@ function ImageSlider({ isRun, data }) {
 
   return (
     <StyledSlider>
-      <div>
-        {testArray.map((image) => (
-          <img src={image} style={{ display: "none" }} alt="tests" />
-        ))}
-      </div>
       <PhotoContainer>
         <AnimatePresence mode="wait">
           <Images src={testArray[number]} key={number} width={"500px"} />

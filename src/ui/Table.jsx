@@ -35,7 +35,6 @@ const TableRow = styled.div`
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: ${(props) => props.columns};
-  /* background-color: var(--icon-color); */
   background-color: var(--color-grey-50);
   padding: 8px 0;
   font-size: ${(props) => props.fs || 17}px;

@@ -12,7 +12,6 @@ const Bullets = styled.button`
     align-items: center;
     justify-content: center;
   }
-  /* border: 1px solid #d3d3d3; */
   border: none;
   background-color: transparent;
   width: 30px;
@@ -22,7 +21,6 @@ const Bullets = styled.button`
   opacity: 0.5;
   ${(props) =>
     props.active && {
-      // backgroundColor: "#21ffc4",
       backgroundColor: "#21c4ff",
       opacity: 1,
       border: "none",

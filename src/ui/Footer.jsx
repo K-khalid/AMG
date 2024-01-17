@@ -4,16 +4,13 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { RiInstagramFill } from "react-icons/ri";
 
 const StyledFooter = styled.footer`
-  /* background-color: var(--color-grey-180); */
   background-color: #00000024;
   color: white;
-  /* box-shadow: 0 0 5px var(--color-grey-400); */
   z-index: 3;
   min-height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* padding: 5px 40px; */
 
   @media (max-width: 800px) {
     flex-direction: column-reverse;
@@ -28,7 +25,6 @@ const Icons = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  /* border: 2px solid var(--color-grey-200); */
   border: 2px solid #ffffff23;
   width: 300px;
   padding: 10px 0;

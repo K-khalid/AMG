@@ -16,30 +16,11 @@ import dataEn from "../data/dataEn.json";
 import { useLang } from "../context/ChangeLanguages";
 
 function Home() {
-  // document.body.addEventListener("keypress", (key) => {
-  //   if (key.key === "z") return console.log("yes");
-  //   console.log("no");
-  // });
   const ref = useRef();
   const isView = useInView(ref, { amount: 0.5 });
   const { lang } = useLang();
   const dataToShow = lang === "en" ? dataEn : dataAr;
 
-  // useEffect(() => {
-  //   const main = document.querySelector(".main");
-  //   const order = document.querySelector(".order");
-  //   function calc() {
-  //     const height = main.scrollTop;
-  //     const orderHeight = order.clientHeight;
-  //     if (height >= orderHeight - 200) setShow(true);
-  //     else setShow(false);
-  //   }
-  //   main.addEventListener("scroll", calc);
-
-  //   return () => {
-  //     main.removeEventListener("scroll", calc);
-  //   };
-  // }, [show]);
   return (
     <div>
       <MainText />
@@ -92,9 +73,6 @@ function Home() {
           >
             <AnimatePresence>
               <Content fs={23} as={"pre"} key={1}>
-                {/* width={500} */}
-                {/* يمكنــــك الأن اســتـخـــــدام خــدمــتــنـــــــا و تسجيــــــل
-                بياناتــــــك */}
                 {dataToShow[1]["ask"]}
               </Content>
               <Modal key={2}>

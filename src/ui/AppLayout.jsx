@@ -3,14 +3,13 @@ import Header from "./Header";
 import { Outlet } from "react-router-dom";
 import Footer from "./Footer";
 import Sidebar from "./Sidebar";
-import Development from "./Development";
 import { useThemes } from "../context/ThemesContext";
+import { useEffect } from "react";
 
 const StyledAppLayout = styled.div`
   display: grid;
   filter: ${(props) =>
     `hue-rotate(${props.angle}deg) drop-shadow(2px 4px 6px black);`};
-  /* filter: brightness(1.1); */
 
   grid-template-rows: auto 1fr auto;
   min-height: 100dvh;
@@ -40,17 +39,31 @@ const StyledAppLayout = styled.div`
     }
   }
 `;
-
+const imgs = [
+  "./Home Images/1.png",
+  "./Home Images/2.png",
+  "./Home Images/3.png",
+  "./Home Images/4.png",
+  "./Home Images/5.png",
+  "./AMG Logo/4845002.png",
+  "Landing.png",
+];
 function AppLayout() {
-  console.log(document.body);
   const { angle } = useThemes();
+
+  useEffect(() => {
+    document.getElementById("imgs")?.remove();
+  }, []);
   return (
     <StyledAppLayout angle={angle} image={"Landing.png"}>
       <Header angle={-angle} />
       <Sidebar />
-
+      <div id="imgs">
+        {imgs.map((image) => (
+          <img src={image} alt="" key={image}></img>
+        ))}
+      </div>
       <div className="main">
-        {/* <Development /> */}
         <Outlet />
       </div>
 

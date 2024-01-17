@@ -31,7 +31,6 @@ const errorVariants2 = {
   visiable: {
     top: ["25%", "20%"],
     transition: {
-      // type: "spring",
       type: "ease",
       duration: 1.5,
       repeat: Infinity,
@@ -75,9 +74,6 @@ const RightEffect = styled(motion.div)`
   transform: translateY(-50%) rotate(-25deg);
   max-width: 400px;
   opacity: 0;
-  /* img {
-    max-width: 50%;
-  } */
 `;
 const LeftEffect = styled(motion.div)`
   position: absolute;
@@ -86,11 +82,7 @@ const LeftEffect = styled(motion.div)`
   transform: translateY(-50%) rotate(25deg);
   max-width: 400px;
   opacity: 0;
-  /* img {
-    max-width: 50%;
-  } */
 `;
-// let variants = errorVariants;
 function Error() {
   const [variants, setVariants] = useState(errorVariants);
   useEffect(

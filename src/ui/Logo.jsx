@@ -21,14 +21,14 @@ function Logo({ initial, width, src, animate, width2 }) {
       width={width}
       width2={width2}
       src={src}
-      drag
-      dragConstraints={{
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
-      }}
-      dragElastic={1}
+      // drag
+      // dragConstraints={{
+      //   top: 0,
+      //   left: 0,
+      //   right: 0,
+      //   bottom: 0,
+      // }}
+      // dragElastic={1}
     />
   );
 }

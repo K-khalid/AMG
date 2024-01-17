@@ -85,7 +85,6 @@ function Open({ children, id }) {
 
 function Window({ children, id }) {
   const { close, openName } = useContext(modalContext);
-  // const { ref } = useOutsideClick2(close);
   const form = cloneElement(children, { onClose: close });
 
   return createPortal(

@@ -5,7 +5,6 @@ const StyledButton = styled.button`
   background-color: ${(props) => props.bg || "var(--icon-color)"};
   border: none;
   border-radius: ${(props) => props.r || "20"}px;
-  /* color: var(--color-grey-200); */
   color: white;
   padding: 8px 20px;
   transition: 0.5s;
@@ -14,8 +13,6 @@ const StyledButton = styled.button`
   width: ${(props) => props.width || "100%"};
   font-size: ${(props) => props.fs || ""}px;
   &:hover {
-    /* background-color: var(--color-grey-600); */
-    /* background-color: #00884d; */
     background-color: ${(props) => props.bgh || "#00884d"};
   }
 
@@ -24,10 +21,6 @@ const StyledButton = styled.button`
     color: black;
   }
   margin: ${(props) => props.m || "0"};
-
-  /* @media (max-width: 552px) {
-    border-radius: 0;
-  } */
 `;
 
 const StyledLink = styled(Link)`

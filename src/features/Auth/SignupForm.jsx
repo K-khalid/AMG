@@ -8,14 +8,6 @@ import useSignup from "./useSignup";
 
 import Ask from "../../ui/Ask";
 
-/* 
-  fake Account: 
-      name: "khaild",
-      email: "tnow77974@gmail.com",
-      password: "pass1234",
-      passwordConfirm: "pass1234",
-*/
-
 function SignupForm() {
   const { reset, handleSubmit, register, formState } = useForm();
 

@@ -23,7 +23,6 @@ const P = styled.p`
   color: #d3d3d3;
   font-weight: 600;
   line-height: 1.4;
-  /* max-width: 500px; */
   margin: 0 auto;
   white-space: pre-line;
   @media (max-width: 552px) {
@@ -51,7 +50,6 @@ const Cursor = styled.span`
   background-color: #ddd;
   animation: cursor 0.5s infinite linear;
 `;
-// AMG IT
 let i = 0;
 const MainText = memo(function ({ text = "AMG IT", delay = 300 }) {
   const letters = text.split("");
@@ -90,7 +88,6 @@ const MainText = memo(function ({ text = "AMG IT", delay = 300 }) {
         transition={{ delay: fullDelay, duration: 1 }}
       >
         <P>AMG foundation for internet Networks and cameras</P>
-        {/* <P> لشبكات الانترنت و الكاميرات AMG مؤسسة</P> */}
         <HorizontalLine width={"25%"} height={2} mt={15} mb={0} />
       </motion.span>
     </Container>

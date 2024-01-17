@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { FaUser, FaMoon, FaSun, FaRightFromBracket } from "react-icons/fa6";
-import { CiMenuKebab } from "react-icons/ci";
 import { TiThMenu } from "react-icons/ti";
 import Logo from "./Logo";
 import { useDarkmode } from "../context/DarkmodeContext";
@@ -14,13 +13,8 @@ import { BASEURL } from "../utils/Base.js";
 import { useLang } from "../context/ChangeLanguages.jsx";
 
 const StyledHeader = styled.header`
-  /* background-color: var(--color-grey-180); */
   background-color: #00000024;
   color: white;
-  /* background-image: linear-gradient(0deg, #00c3789d, #00bdc399); */
-  /* box-shadow: 0 0 5px var(--color-grey-400); */
-  /* box-shadow: 0 0 5px white; */
-  /* border-bottom: 1px solid white; */
   z-index: 3;
   min-height: 60px;
   display: flex;
@@ -77,7 +71,6 @@ const UserImg = styled.img`
   height: 50px;
   border-radius: 50%;
   filter: ${(props) => `hue-rotate(${props.angle}deg)`};
-  /* border: 3px solid var(--color-grey-200); */
 
   @media (max-width: 778px) {
     width: 40px;
@@ -86,12 +79,10 @@ const UserImg = styled.img`
 `;
 
 const UserName = styled.h4`
-  /* color: var(--color-grey-900); */
   color: white;
   @media (max-width: 778px) {
     font-size: 14px;
   }
-  /* text-shadow: 0 0 5px #333; */
 `;
 
 const IconList = styled.ul`
@@ -111,7 +102,6 @@ const IconList = styled.ul`
     top: 92%;
     right: -8%;
     font-weight: bold;
-    /* background-color: var(--color-grey-180); */
     background-color: #00000024;
     width: 70px;
     &.open {

@@ -8,20 +8,16 @@ import { useState } from "react";
 
 const Controllers = styled.div`
   background-color: var(--color-grey-150);
-  /* color: var(--color-grey-0); */
   display: flex;
   align-items: center;
   justify-content: center;
   position: fixed;
   padding: 20px 40px;
-  /* border-radius: 7px; */
   bottom: 61px;
   right: 17px;
   z-index: 1000;
   flex-direction: column;
   gap: 30px;
-  /* transform: translateX(-50%); */
-  /* border-bottom: 1px solid; */
 `;
 
 async function createAdmins(role = "user") {

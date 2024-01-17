@@ -4,7 +4,6 @@ import Heading from "../ui/Heading";
 import UpdatePasswordForm from "../features/Auth/UpdatePasswordForm";
 
 const Layout = styled.div`
-  /* background-color: var(--color-grey-180); */
   display: flex;
   justify-content: center;
   margin-top: 30px;
@@ -16,7 +15,6 @@ const Layout = styled.div`
 `;
 
 const Container = styled.div`
-  /* background-color: var(--color-grey-180); */
   padding: 50px;
   height: 100%;
   border-radius: 20px;

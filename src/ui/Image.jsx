@@ -7,14 +7,9 @@ const StyledPhoto = styled(motion.img)`
   width: ${(props) => props.width || "100%"};
   max-width: ${(props) => props.width || "100%"};
   height: ${(props) => props.width || "100%"};
-
-  /* width: 700px; */
   max-height: ${(props) => props.width || "100%"};
-  /* height: 500px; */
+
   @media (max-width: 1100px) {
-    /* margin-bottom: 40px; */
-    /* width: 300px;
-    max-width: 300px; */
     height: 300px;
     max-height: 300px;
     width: 300px;
@@ -22,9 +17,6 @@ const StyledPhoto = styled(motion.img)`
     padding: 0;
   }
   @media (max-width: 552px) {
-    /* margin-bottom: 40px; */
-    /* height: 5%;
-    max-height: 5%; */
     width: normal;
     padding: 0;
   }
@@ -67,10 +59,6 @@ const photosVariants2 = {
 
   exit: {
     x: "-100vw",
-    // transition: {
-    //   type: "ease",
-    //   duration: 0.3,
-    // },
   },
 };
 

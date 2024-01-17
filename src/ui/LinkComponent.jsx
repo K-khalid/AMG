@@ -42,7 +42,6 @@ const StyledLink = styled(NavLink)`
   @media (max-width: 552px) {
     flex: 1;
     padding: 0;
-    /* padding: 25px 80px; */
     font-size: 22px;
     svg {
       width: 35px;
