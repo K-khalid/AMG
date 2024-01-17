@@ -18,6 +18,7 @@ const Form = styled.form`
     margin: 0;
     width: 100%;
     border-radius: 0;
+    gap: 0;
   }
 `;
 

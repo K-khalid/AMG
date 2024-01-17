@@ -81,7 +81,7 @@ function OrderForm({ onClose, order = {} }) {
   return (
     <Form
       onSubmit={handleSubmit(onSubmit, onError)}
-      gap="0"
+      gap="25"
       mt={0}
       p="25px 30px"
     >
