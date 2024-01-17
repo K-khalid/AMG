@@ -65,7 +65,6 @@ const MainText = memo(function ({ text = "AMG IT", delay = 300 }) {
       } else {
         return setTimeout(() => {
           writer.children[0]?.remove();
-          console.log("work");
           clearInterval(id);
           i = 0;
         }, delay + 100);
