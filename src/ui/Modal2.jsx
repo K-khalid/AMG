@@ -39,6 +39,7 @@ const Background = styled(motion.div)`
   top: 0;
   left: 0;
   backdrop-filter: blur(0);
+  will-change: backdrop-filter;
 `;
 
 const Button = styled.button`
