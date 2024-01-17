@@ -7,6 +7,7 @@ const StyledWindow = styled(motion.div)`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  will-change: transform;
   @media (max-width: 778px) {
     width: 100%;
     max-height: 100%;
