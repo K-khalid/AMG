@@ -1,18 +1,7 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
-// const Img = styled(motion.img)`
-//   width: ${(props) => props.width || 100}px;
-//   cursor: grab;
-//   &:active {
-//     cursor: grabbing;
-//   }
-
-//   @media (max-width: 552px) {
-//     width: ${(props) => props.width2 || "60px"};
-//   }
-// `;
-
-const Img = styled.img`
+const Img = styled(motion.img)`
   width: ${(props) => props.width || 100}px;
   cursor: grab;
   &:active {
@@ -24,15 +13,27 @@ const Img = styled.img`
   }
 `;
 
-function Logo({ initial, width, src, animate, width2, style }) {
+// const Img = styled.img`
+//   width: ${(props) => props.width || 100}px;
+//   cursor: grab;
+//   &:active {
+//     cursor: grabbing;
+//   }
+
+//   @media (max-width: 552px) {
+//     width: ${(props) => props.width2 || "60px"};
+//   }
+// `;
+
+function Logo({ initial, width, src, animate, width2 }) {
   return (
     <Img
-      // initial={initial}
-      // animate={animate}
+      initial={initial}
+      animate={animate}
       width={width}
       width2={width2}
       src={src}
-      style={style}
+
       // drag
       // dragConstraints={{
       //   top: 0,

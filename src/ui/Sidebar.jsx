@@ -13,12 +13,14 @@ import useUser from "../features/Auth/useUser";
 import { BASEURL } from "../utils/Base";
 
 const StyledSidebar = styled(motion.aside)`
+  will-change: transform, border-radius;
   display: flex;
   align-items: center;
   text-align: center;
   flex-direction: column;
   position: fixed;
-  left: -200px;
+  /* left: -200px; */
+  translate: -100%;
   min-width: 200px;
   max-width: 200px;
   height: 100dvh;
@@ -26,17 +28,17 @@ const StyledSidebar = styled(motion.aside)`
   padding-top: 100px !important;
   z-index: 2;
   background-color: var(--color-grey-180);
-  transition: 0.7s;
+  transition: 0.7s cubic-bezier(0.42, 0, 0.58, 1);
 
   & > button {
     left: 100%;
   }
   &.open {
-    left: 0;
+    translate: 0;
   }
 
   &.close {
-    left: -200px;
+    translate: -100%;
   }
 
   @media (max-width: 552px) {
@@ -49,7 +51,6 @@ const StyledSidebar = styled(motion.aside)`
     gap: 10px;
 
     &.close {
-      left: -100%;
       border-radius: 50%;
     }
     &.open {
@@ -122,14 +123,14 @@ function Sidebar() {
         />
       </Button>
       <Logo
-        // animate={{
-        //   rotate: [0, 360],
-        //   transition: {
-        //     ease: "linear",
-        //     repeat: Infinity,
-        //     duration: 2,
-        //   },
-        // }}
+        animate={{
+          rotate: [0, 360],
+          transition: {
+            ease: "linear",
+            repeat: Infinity,
+            duration: 2,
+          },
+        }}
         src="./AMG Logo/4845002.png"
         width="80"
         width2="120px"
