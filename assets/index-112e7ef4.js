@@ -609,7 +609,7 @@ to {
       }
     }
   }
-`,K8=["./Home Images/1.png","./Home Images/2.png","./Home Images/3.png","./Home Images/4.png","./Home Images/5.png","./AMG Logo/4845002.png","Landing.png"];function G8(){const{angle:e}=R2();return x.useEffect(()=>{var t;(t=document.getElementById("imgs"))==null||t.remove()},[]),v.jsxs(q8,{angle:e,image:"Landing.png",children:[v.jsx(A8,{angle:-e}),v.jsx(H8,{}),v.jsx("div",{id:"imgs",children:K8.map(t=>v.jsx("img",{src:t,alt:""},t))}),v.jsx("div",{className:"main",children:v.jsx(yk,{})}),v.jsx(D8,{})]})}const Q8=I(ct.h1)`
+`,K8=["./Home Images/1.png","./Home Images/2.png","./Home Images/3.png","./Home Images/4.png","./Home Images/5.png","./AMG Logo/4845002.png","./Home Images/order.png","Landing.png"];function G8(){const{angle:e}=R2();return x.useEffect(()=>{var t;(t=document.getElementById("imgs"))==null||t.remove()},[]),v.jsxs(q8,{angle:e,image:"Landing.png",children:[v.jsx(A8,{angle:-e}),v.jsx(H8,{}),v.jsx("div",{id:"imgs",children:K8.map(t=>v.jsx("img",{src:t,alt:""},t))}),v.jsx("div",{className:"main",children:v.jsx(yk,{})}),v.jsx(D8,{})]})}const Q8=I(ct.h1)`
   font-family: "Vazirmatn", sans-serif;
   font-weight: 600;
   color: white;
