@@ -860,6 +860,7 @@ to {
   top: 0;
   left: 0;
   backdrop-filter: blur(0);
+  will-change: backdrop-filter;
 `,dA=I.button`
   width: 30px;
   height: 30px;
