@@ -7,14 +7,19 @@ const SignupLayout = styled.div`
   padding: 50px 0;
   align-items: center;
   text-align: center;
-  display: grid;
-  grid-template-rows: auto auto 1fr;
+  /* display: grid;
+  grid-template-rows: auto auto 1fr; */
+  display: flex;
+  flex-direction: column;
   gap: 10px;
   background-color: var(--color-grey-180);
   height: 100dvb;
 
   @media (max-width: 552px) {
-    gap: 15px;
+    /* gap: 15px; */
+    gap: 0;
+    padding-bottom: 0;
+    justify-content: space-between;
   }
 `;
 

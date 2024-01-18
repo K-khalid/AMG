@@ -6,15 +6,19 @@ import LoginForm from "../features/Auth/LoginForm";
 const LoginLayout = styled.div`
   padding: 50px 0;
   align-items: center;
-  display: grid;
-  grid-template-rows: auto auto 1fr;
+  /* display: grid;
+  grid-template-rows: auto auto 1fr; */
   text-align: center;
   gap: 25px;
   background-color: var(--color-grey-180);
   height: 100dvb;
+  display: flex;
+  flex-direction: column;
 
   @media (max-width: 552px) {
-    gap: 15px;
+    gap: 0;
+    padding-bottom: 0;
+    justify-content: space-between;
   }
 `;
 

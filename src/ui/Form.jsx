@@ -18,7 +18,13 @@ const Form = styled.form`
     margin: 0;
     width: 100%;
     border-radius: 0;
-    gap: 0;
+    padding: 0;
+    flex: 1;
+    justify-content: flex-end;
+
+    & > button {
+      border-radius: 0;
+    }
   }
 `;
 

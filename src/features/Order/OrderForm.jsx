@@ -45,7 +45,7 @@ function OrderForm({ onClose, order = {} }) {
   const { register, handleSubmit, clearErrors, getValues } = useForm({
     defaultValues: id
       ? { ...order }
-      : { requestedBy: userEmail, address: Address }, // address: Address || order?.address
+      : { requestedBy: userEmail, address: Address },
     values: id ? { ...order } : { requestedBy: userEmail, address: Address },
   });
   console.log(Address);
@@ -70,12 +70,6 @@ function OrderForm({ onClose, order = {} }) {
   function onError(errors) {
     let errorName = Object.values(errors)?.at(0)?.message;
     toast.error(errorName);
-    // reset(
-    //   {
-    //     ...errors,
-    //   },
-    //   { keepValues: true }
-    // );
     clearErrors();
   }
   return (
