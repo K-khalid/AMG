@@ -18,8 +18,9 @@ const Form = styled.form`
     margin: 0;
     width: 100%;
     border-radius: 0;
-    padding: 0;
-    flex: 1;
+    /* padding: 0; */
+    gap: 15px;
+
     justify-content: flex-end;
 
     & > button {

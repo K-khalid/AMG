@@ -27,10 +27,10 @@ function Login() {
     <LoginLayout>
       <div>
         <Logo width={200} width2={"40%"} src="./AMG Logo/4882136.png" />
+        <Heading width="20%" align="center">
+          Join Us Now!
+        </Heading>
       </div>
-      <Heading width="20%" align="center">
-        Join Us Now!
-      </Heading>
 
       <LoginForm />
     </LoginLayout>
