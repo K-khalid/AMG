@@ -901,7 +901,6 @@ to {
     width: 100%;
     border-radius: 0;
     /* padding: 0; */
-    gap: 15px;
 
     justify-content: flex-end;
 
