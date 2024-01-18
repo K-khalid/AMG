@@ -900,8 +900,9 @@ to {
     margin: 0;
     width: 100%;
     border-radius: 0;
-    padding: 0;
-    flex: 1;
+    /* padding: 0; */
+    gap: 15px;
+
     justify-content: flex-end;
 
     & > button {
@@ -1478,7 +1479,7 @@ FOR DARK MODE
     padding-bottom: 0;
     justify-content: space-between;
   }
-`;function gO(){return v.jsxs(mO,{children:[v.jsx("div",{children:v.jsx(Tc,{width:200,width2:"40%",src:"./AMG Logo/4882136.png"})}),v.jsx($c,{width:"20%",align:"center",children:"Join Us Now!"}),v.jsx(pO,{})]})}function yO(){const e=Qr(),{mutate:t,isLoading:n}=nr({mutationFn:Tj,onSuccess:()=>{Y.dismiss(),Y.success("Signup Success"),e(`/${De}/`)},onMutate:()=>Y.loading("Signing up"),onError:r=>{Y.dismiss(),Y.error(r.message),console.log(r,"signup")}});return{signup:t,isLoading:n}}function vO(){var l,u,c,d;const{reset:e,handleSubmit:t,register:n,formState:r}=Lc(),{signup:i,isLoading:s}=yO(),o=r.errors;function a(h){i({...h,fullName:h.name},{onSettled:()=>e})}return v.jsxs(Ka,{gap:35,onSubmit:t(a),children:[v.jsx(gt,{label:"Your Name",error:(l=o==null?void 0:o.name)==null?void 0:l.message,children:v.jsx(kt,{id:"name",...n("name",{required:"Name required"}),disabled:s})}),v.jsx(gt,{label:"Email",error:(u=o==null?void 0:o.email)==null?void 0:u.message,children:v.jsx(kt,{type:"email",id:"email",...n("email",{required:"Email required"}),disabled:s})}),v.jsx(gt,{label:"Password",error:(c=o==null?void 0:o.password)==null?void 0:c.message,children:v.jsx(kt,{id:"password",type:"password",...n("password",{required:"Password required",minLength:{value:8,message:"Too short password!"}}),disabled:s})}),v.jsx(gt,{label:"Password Confirm",error:(d=o==null?void 0:o.passwordConfirm)==null?void 0:d.message,children:v.jsx(kt,{id:"passwordConfirm",type:"password",...n("passwordConfirm",{required:"Password Confirm required",validate:(h,p)=>h===p.password||"Passwords not correct"}),disabled:s})}),v.jsx(G2,{question:"already have account ?",link:"login",to:"/AMG/login"}),v.jsx(mn,{r:6,disabled:s,children:"Confirm"})]})}const wO=I.div`
+`;function gO(){return v.jsxs(mO,{children:[v.jsxs("div",{children:[v.jsx(Tc,{width:200,width2:"40%",src:"./AMG Logo/4882136.png"}),v.jsx($c,{width:"20%",align:"center",children:"Join Us Now!"})]}),v.jsx(pO,{})]})}function yO(){const e=Qr(),{mutate:t,isLoading:n}=nr({mutationFn:Tj,onSuccess:()=>{Y.dismiss(),Y.success("Signup Success"),e(`/${De}/`)},onMutate:()=>Y.loading("Signing up"),onError:r=>{Y.dismiss(),Y.error(r.message),console.log(r,"signup")}});return{signup:t,isLoading:n}}function vO(){var l,u,c,d;const{reset:e,handleSubmit:t,register:n,formState:r}=Lc(),{signup:i,isLoading:s}=yO(),o=r.errors;function a(h){i({...h,fullName:h.name},{onSettled:()=>e})}return v.jsxs(Ka,{gap:35,onSubmit:t(a),children:[v.jsx(gt,{label:"Your Name",error:(l=o==null?void 0:o.name)==null?void 0:l.message,children:v.jsx(kt,{id:"name",...n("name",{required:"Name required"}),disabled:s})}),v.jsx(gt,{label:"Email",error:(u=o==null?void 0:o.email)==null?void 0:u.message,children:v.jsx(kt,{type:"email",id:"email",...n("email",{required:"Email required"}),disabled:s})}),v.jsx(gt,{label:"Password",error:(c=o==null?void 0:o.password)==null?void 0:c.message,children:v.jsx(kt,{id:"password",type:"password",...n("password",{required:"Password required",minLength:{value:8,message:"Too short password!"}}),disabled:s})}),v.jsx(gt,{label:"Password Confirm",error:(d=o==null?void 0:o.passwordConfirm)==null?void 0:d.message,children:v.jsx(kt,{id:"passwordConfirm",type:"password",...n("passwordConfirm",{required:"Password Confirm required",validate:(h,p)=>h===p.password||"Passwords not correct"}),disabled:s})}),v.jsx(G2,{question:"already have account ?",link:"login",to:"/AMG/login"}),v.jsx(mn,{r:6,disabled:s,children:"Confirm"})]})}const wO=I.div`
   padding: 50px 0;
   align-items: center;
   text-align: center;
@@ -1496,7 +1497,7 @@ FOR DARK MODE
     padding-bottom: 0;
     justify-content: space-between;
   }
-`;function xO(){return v.jsxs(wO,{children:[v.jsx("div",{children:v.jsx(Tc,{width:"200px",width2:"40%",src:"./AMG Logo/4882136.png"})}),v.jsx($c,{width:"20%",align:"center",children:"Signup Now!"}),v.jsx(vO,{})]})}function SO(){return v.jsxs("div",{className:"lds-ripple",children:[v.jsx("div",{}),v.jsx("div",{})]})}const bO=I.div`
+`;function xO(){return v.jsxs(wO,{children:[v.jsxs("div",{children:[v.jsx(Tc,{width:"200px",width2:"40%",src:"./AMG Logo/4882136.png"}),v.jsx($c,{width:"20%",align:"center",children:"Signup Now!"})]}),v.jsx(vO,{})]})}function SO(){return v.jsxs("div",{className:"lds-ripple",children:[v.jsx("div",{}),v.jsx("div",{})]})}const bO=I.div`
   background-color: var(--color-grey-180);
   width: 100%;
   height: 100%;
